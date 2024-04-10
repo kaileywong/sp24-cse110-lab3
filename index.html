@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Meeting Minutes</title>
+    <meta charset="utf-8" />
+    <link rel="icon" href="favicon.ico" />
+</head>
+
+<body>
+    <header>
+        <h1>CAFFECoders Meeting Minutes</h1>
+        <nav>
+            <ul>
+                <li><a href="#overview">Meeting Overview</a></li>
+                <li><a href="#agenda">Agenda</a></li>
+                <li><a href="#actionitems">Action Items</a></li>
+                <li><a href="#misc">Miscellaneous</a></li>
+                <li><a href="#media">Media</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="overview">
+            <h2>Meeting 1</h2>
+            <h3>Brainstorming Session</h3>
+            <div>
+                <p><b>Date:</b> 04/10/2024</p>
+                <p><b>Time:</b> 2:00pm</p>
+                <p><i>Attendance List:</i> John Smith, Jane Doe, Nancy Drew</p>
+            </div>
+            <br>
+        </section>
+        <section id="agenda">
+            <h2>Agenda</h2>
+            <ol>
+                <li>Welcome</li>
+                <li>Introductions
+                    <ul>
+                        <li>John Smith</li>
+                        <li>Jane Doe</li>
+                        <li>Nancy Drew</li>
+                    </ul>
+                </li>
+
+                <li>Project overview
+                    <ul>
+                        <li>Requirements</li>
+                        <li>Security</li>
+                        <li>Accessibility</li>
+                        <li>Audience</li>
+                    </ul>
+                </li>
+
+                <li>Idea generation
+                    <ul>
+                        <li>Design
+                            <ul>
+                                <li><a href="https://www.canva.com/templates/s/to-do-list/">Inspiration from Canva</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li>Features
+                            <ul>
+                                <li>Task creation</li>
+                                <li>Notifications</li>
+                                <li>Task modification</li>
+                                <li>Task deletion</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+            
+        </section>
+        <section id="actionitems">
+            <h2>Action Items</h2>
+            <ol>
+                <li>Create repository</li>
+                <li>Vote on <em>two</em> ideas</li>
+                <li>Set meeting time for <strong>next week</strong></li>
+            </ol>
+        </section>
+        <section id="misc">
+            <h2>Miscellaneous</h2>
+            <p>No comments, questions, or concerns from the team</p>
+        </section>
+        <section id="media">
+            <h2>Media</h2>
+            <details>
+                <summary>Media Summary</summary>
+                <p>Images presented during the meeting along with an audio and video recording of the meeting</p>
+            </details>
+            <img src="https://marketplace.canva.com/EAEmXkEJwrY/1/0/1131w/canva-soft-muted-colours-floral-to-do-list-planner-CMKQ32xZMVQ.jpg"
+                width="200" alt="Canva to-do list template">
+            <br>
+            <audio controls src="/media/programmers.mp3"></audio>
+            <br>
+            <video controls width="250">
+                <source src="/media/programmers.mp4" />
+            </video>
+        </section>
+        <section>
+            <h2>Form</h2>
+            <form action="#">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname">
+                <br>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname">
+                <br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+                <br>
+                <label for="year-select">Year in College:</label>
+                <select id="year-select" name="year">
+                    <option value="">Choose your year</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+                <br>
+
+                <fieldset>
+                    <legend>How did you hear about us?</legend>
+                    <div>
+                        <input type="radio" id="ig" name="refer" value="ig" checked />
+                        <label for="ig">Instagram</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="friend" name="refer" value="friend" checked />
+                        <label for="friend">Friend</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="mail" name="refer" value="mail" checked />
+                        <label for="mail">Email</label>
+                    </div>
+                </fieldset>
+
+                <label for="position">What position would you like to apply for:</label>
+                <input list="positions" id="position" name="position">
+                <datalist id="positions">
+                    <option value="Designer">
+                    <option value="Developer">
+                    <option value="Planner">
+                </datalist>
+                <br>
+
+                <label for="why">Why do you want to join our team?</label>
+                <textarea id="why" name="why" rows="5" cols="40"></textarea>
+                <br>
+
+                <label for="confirm">Please check this box to receive a confirmation email. </label>
+                <input type="checkbox" id="confirm" name="confirm">
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <span>CAFFECoders 2024</span>
+    </footer>
+</body>
+
+</html>
