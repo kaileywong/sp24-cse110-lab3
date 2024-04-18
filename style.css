@@ -1,0 +1,186 @@
+:root {
+    --primary-blue: #3195d8;
+}
+
+* {
+    background-color: whitesmoke;
+    font-family: "DM Sans", sans-serif;
+}
+
+header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+}
+
+h1 {
+    /* applies to page title */
+    color: rgb(0, 15, 115);
+    text-align: center;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul a {
+    color: #50adb9;
+    font-family: "Abel";
+    font-size: 1.5em;
+    padding: 1vw 2vw 1vw 0vw;
+}
+
+nav ul a:hover {
+    color: #6f50b9;
+}
+
+nav ul a:active {
+    color: #b950a0;
+}
+
+.section-head {
+    /* variable with fallback */
+    color: var(--primary-blue, #336298);
+    border-style: dashed;
+    border-color: hsl(227, 43%, 52%);
+    border-width: 1mm;
+    border-radius: 1pc;
+    padding: 1% 1.5% 1% 1.5%;
+    background-color: color-mix(in srgb, #9fd6f2 75%, white);
+
+     &:hover {
+       color: #6f50b9;
+    }
+}
+
+h2:has(+ ol) {
+    margin-bottom: 50px;
+}
+
+#overview {
+    height: 300px;
+    border-bottom: 5px solid black;
+}
+
+#mtg-name {
+    text-decoration: rgb(135, 236, 201) wavy underline;
+}
+
+#agenda ol {
+    margin-top: 40px;
+    margin-left: 5px;
+    margin-right: 0px;
+    margin-bottom: 50px;
+}
+
+#misc p {
+    display: none;
+}
+
+#media-wrapper {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+#media-wrapper img,
+#media-wrapper audio,
+#media-wrapper video {
+    flex-basis: 30%;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    margin: 5px 10px 0px 10px;
+}
+
+
+img[alt="Canva to-do list template"] {
+    height: auto;
+    max-width: 300px;
+    min-width: 100px;
+    background-color: lightpink;
+}
+
+#media-wrapper img+audio {
+    background-color: lightsalmon;
+}
+
+#media-wrapper img~video {
+    background-color: lightyellow;
+}
+
+form {
+    margin: auto;
+}
+
+form.apply-form {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px 20px 20px 50px 20px 100px 20px 150px 30px;
+    row-gap: 40px;
+    margin-bottom: 10vh;
+}
+
+form>label,
+form>p {
+    font-family: 'Inter';
+}
+
+.form-group,
+form>button {
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+span {
+    background-color: color(from rgb(168, 179, 251) srgb r g b / 0.5);
+    display: block;
+    text-align: center;
+}
+
+@media (min-width: 576px) {
+    #overview {
+        font-size: 25px;
+    }
+
+    .section-head {
+        width: 20vw;
+        font-size: 25px;
+    }
+
+    section {
+        font-size: 12px;
+    }
+
+    form.apply-form {
+        width: 80%;
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .section-head {
+        width: fit-content;
+    }
+
+    #overview,
+    section {
+        font-size: 18px;
+    }
+}
