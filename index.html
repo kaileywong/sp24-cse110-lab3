@@ -5,6 +5,11 @@
     <title>Meeting Minutes</title>
     <meta charset="utf-8" />
     <link rel="icon" href="favicon.ico" />
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Abel&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:wght@100..900&display=swap');
+    </style>
 </head>
 
 <body>
@@ -23,17 +28,17 @@
 
     <main>
         <section id="overview">
-            <h2>Meeting 1</h2>
-            <h3>Brainstorming Session</h3>
+            <h2 class="section-head">Meeting 1</h2>
+            <h3 id="mtg-name">Brainstorming Session</h3>
             <div>
-                <p><b>Date:</b> 04/10/2024</p>
+                <p id="date"><b>Date:</b> 04/10/2024</p>
                 <p><b>Time:</b> 2:00pm</p>
                 <p><i>Attendance List:</i> John Smith, Jane Doe, Nancy Drew</p>
             </div>
             <br>
         </section>
         <section id="agenda">
-            <h2>Agenda</h2>
+            <h2 class="section-head">Agenda</h2>
             <ol>
                 <li>Welcome</li>
                 <li>Introductions
@@ -76,7 +81,7 @@
 
         </section>
         <section id="actionitems">
-            <h2>Action Items</h2>
+            <h2 class="section-head">Action Items</h2>
             <ol>
                 <li>Create repository</li>
                 <li>Vote on <em>two</em> ideas</li>
@@ -84,7 +89,7 @@
             </ol>
         </section>
         <section id="misc">
-            <h2>Miscellaneous</h2>
+            <h2 class="section-head">Miscellaneous</h2>
             <p>No comments, questions, or concerns from the team</p>
         </section>
         <section id="media">
@@ -93,30 +98,30 @@
                 <summary>Media Summary</summary>
                 <p>Images presented during the meeting along with an audio and video recording of the meeting</p>
             </details>
-            <img src="https://marketplace.canva.com/EAEmXkEJwrY/1/0/1131w/canva-soft-muted-colours-floral-to-do-list-planner-CMKQ32xZMVQ.jpg"
-                width="200" alt="Canva to-do list template">
-            <br>
-            <audio controls src="./media/programmers.mp3"></audio>
-            <br>
-            <video controls width="250">
-                <source src="./media/programmers.mp4" />
-            </video>
+            <div id="media-wrapper">
+                <img src="https://marketplace.canva.com/EAEmXkEJwrY/1/0/1131w/canva-soft-muted-colours-floral-to-do-list-planner-CMKQ32xZMVQ.jpg"
+                    id="canva-img" alt="Canva to-do list template">
+                <audio controls src="./media/programmers.mp3"></audio>
+                <video controls width="250">
+                    <source src="./media/programmers.mp4" />
+                </video>
+            </div>
         </section>
-        <section>
+        <section id="form-wrap">
             <h2>Form</h2>
-            <form action="#">
+            <form class="apply-form" action="#">
                 <label for="fname">First Name:</label>
                 <input type="text" id="fname" name="fname">
-                <br>
+
                 <label for="lname">Last Name:</label>
                 <input type="text" id="lname" name="lname">
-                <br>
+
                 <label for="email">Email:</label>
                 <input type="text" id="email" name="email">
-                <br>
+
                 <label for="date">Date:</label>
                 <input type="date" id="date" name="date">
-                <br>
+               
                 <label for="year-select">Year in College:</label>
                 <select id="year-select" name="year">
                     <option value="">Choose your year</option>
@@ -125,8 +130,8 @@
                     <option value="3">3</option>
                     <option value="4">4</option>
                 </select>
-                <br>
 
+                <p>Referrals:</p>
                 <fieldset>
                     <legend>How did you hear about us?</legend>
                     <div>
@@ -150,15 +155,14 @@
                     <option value="Developer">
                     <option value="Planner">
                 </datalist>
-                <br>
 
                 <label for="why">Why do you want to join our team?</label>
-                <textarea id="why" name="why" rows="5" cols="40"></textarea>
-                <br>
+                <textarea id="why" name="why"></textarea>
 
-                <label for="confirm">Please check this box to receive a confirmation email. </label>
-                <input type="checkbox" id="confirm" name="confirm">
-                <br>
+                <div class="form-group">
+                    <label for="confirm">Please check this box to receive a confirmation email. </label>
+                    <input type="checkbox" id="confirm" name="confirm">
+                </div>
                 <button type="submit">Submit</button>
             </form>
         </section>
